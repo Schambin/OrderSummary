@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@300;400;500;600;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Red Hat Display', sans-serif; */
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    background-image: url(pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    position: relative;
+    font-size: 16px;
+}
+
+
+.container{
+    position: absolute;
+    /* border: 1px solid red; */
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    border-radius: 20px;
+}
+
+#hero{
+    border-radius: 20px 20px 0px 0px;
+    fill: none;
+}
+
+.contentText{
+    /* border: 1px solid red; */
+    padding: 8%;
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+}
+
+.title{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contentText p.subtitle{
+    color: hsla(0, 0%, 50%, 0.76);
+    padding: 0px 15px 0px 15px;
+    margin-bottom: 25px;
+}
+
+.planBox{
+    /* border: 1px solid red; */
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.planBox a{
+    font-weight: 700;
+    color: blue;
+}
+
+.planBoxLeft{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.planBoxLeft div{
+    margin-left: 20px;
+}
+
+.planBoxLeft div h5{
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.planBoxLeft div p{
+    font-weight: 500;
+    color: hsla(0, 2%, 49%, 0.855);;
+}
+
+.proceedBtn{
+    /* border: 1px solid red; */
+    font-weight: 700;
+    display: block;
+    text-decoration: none;
+    justify-content: center;
+    color: white;
+    border-radius: 10px;
+    margin: 30px 15px;
+    padding: 15px;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: rgba(79, 79, 79, 0.35) 0px 10px 25px;
+    transition: background-color 0.5s ease-in;
+}
+
+.proceedBtn:hover{
+    background-color: hsl(245, 100%, 70%);
+}
+
+.cancelBtn{
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    text-decoration: none;
+    transition: 0.3s ease-in;
+}
+
+.cancelBtn:hover{
+    color: hsl(223, 24%, 23%);
+}
+
+footer{
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 425px){
+    body{
+        background-image: url(pattern-background-mobile.svg);
+        font-size: 14px;
+    }
+
+    .container{
+        max-width: 87%;
+    }
+
+    .title{
+        font-size: 22px;
+    }
+
+    #hero{
+        max-width: 300px;
+    }
+
+    div.planBox{
+        padding: 12px;
+    }
+
+    .planBoxLeft div{
+        margin-left: 10px;
+    }
+}
